@@ -69,6 +69,11 @@ async function michiruso() {
     addToList(datos, arrPlayers.length);
     updateTable();
 }
+async function alierdel() {
+    const datos = await riotAPI('Alierdel');
+    addToList(datos, arrPlayers.length);
+    updateTable();
+}
 
 
 function updateTable() {
@@ -188,4 +193,5 @@ sharpy()
 polagg()
 stifmaister()
 michiruso()
+alierdel()
 console.log(arrPlayers);
