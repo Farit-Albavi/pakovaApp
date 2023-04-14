@@ -8,9 +8,7 @@ async function riotAPI(NICKNAME) {
     return datos
 }
 
-
 const arrPlayers = []
-
 
 async function damgg() {
     const datos = await riotAPI('t1 damGG');
@@ -68,8 +66,6 @@ async function stifmaister() {
 }
 
 
-
-
 function updateTable() {
     arrPlayers.sort((a, b) => {
         return b.points - a.points
@@ -96,8 +92,6 @@ function updateTable() {
         pointsCell.textContent = player.points;
     });
 
-
-
     let html = '<tr><th>Nick</th><th>Rank</th><th>Division</th><th>LP</th><th>Winrate</th><th>Pakova Points</th></tr>';
 
     arrPlayers.forEach(player => {
@@ -106,8 +100,6 @@ function updateTable() {
 
     table.innerHTML = html;
 }
-
-
 
 function addToList(datos) {
 
@@ -119,7 +111,6 @@ function addToList(datos) {
         winrate: "",
         points: ""
     }
-
 
     player.nick = datos[0].summonerName
     player.leaguePoints = datos[0].leaguePoints
@@ -138,11 +129,8 @@ function addToList(datos) {
         player.points = calcularRankPoint(datos[1].tier, datos[1].rank, datos[1].leaguePoints)
     }
 
-
     arrPlayers.push(player)
 }
-
-
 
 
 function calcularRankPoint(rank, division, leaguePoints) {
@@ -180,13 +168,8 @@ function calcularRankPoint(rank, division, leaguePoints) {
             return 0
         }
     }
-
-
-
-
     return points
 }
-
 
 parawin()
 ava()
