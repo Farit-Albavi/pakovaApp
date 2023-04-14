@@ -34,44 +34,45 @@ async function alphaphong() {
 
 async function ava() {
     const datos = await riotAPI('áva');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
 
 async function parawin() {
     const datos = await riotAPI('parawin');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
 
 async function drvenomancer() {
     const datos = await riotAPI('DR V3N0MANCER');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
 async function sharpy() {
     const datos = await riotAPI('sharpy');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
 async function polagg() {
     const datos = await riotAPI('PolaGEGE');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
 async function stifmaister() {
     const datos = await riotAPI('stiifmaister');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
 async function michiruso() {
     const datos = await riotAPI('AncientEvil');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
+
 async function alierdel() {
     const datos = await riotAPI('Alierdel');
-    addToList(datos, arrPlayers.length);
+    addToList(datos);
     updateTable();
 }
 
