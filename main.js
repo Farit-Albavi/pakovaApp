@@ -64,6 +64,11 @@ async function stifmaister() {
     addToList(datos, arrPlayers.length);
     updateTable();
 }
+async function michiruso() {
+    const datos = await riotAPI('AncientEvil');
+    addToList(datos, arrPlayers.length);
+    updateTable();
+}
 
 
 function updateTable() {
@@ -182,4 +187,5 @@ drvenomancer()
 sharpy()
 polagg()
 stifmaister()
+michiruso()
 console.log(arrPlayers);
