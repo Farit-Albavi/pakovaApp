@@ -1,5 +1,5 @@
 async function riotAPI(NICKNAME) {
-    const APIKEY = "RGAPI-943232b7-eaab-4a83-852f-6ff98b3c4ad1"
+    const APIKEY = "RGAPI-8688fc62-f2db-4937-a688-4aa57fcb67cd"
     const riotINFO = await fetch('https://la2.api.riotgames.com/lol/summoner/v4/summoners/by-name/' + NICKNAME + '?api_key=' + APIKEY + ' ')
     const ACCOUNTDATA = await riotINFO.json();
     const id = ACCOUNTDATA.id
