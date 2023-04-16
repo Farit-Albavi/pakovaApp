@@ -79,6 +79,11 @@ async function alierdel() {
     addToList(datos);
     updateTable();
 }
+async function bqolzt() {
+    const datos = await riotAPI('bqolzt');
+    addToList(datos);
+    updateTable();
+}
 
 
 function updateTable() {
@@ -200,4 +205,5 @@ stifmaister()
 michiruso()
 alierdel()
 smurfmage()
+bqolzt()
 console.log(arrPlayers);
