@@ -19,6 +19,10 @@ async function nytherax() {
     const datos = await riotAPI('Nytherax');
     addToList(datos)
 }
+async function smurfmage() {
+    const datos = await riotAPI('smurfmage');
+    addToList(datos)
+}
 
 
 async function zedoge() {
@@ -195,4 +199,5 @@ polagg()
 stifmaister()
 michiruso()
 alierdel()
+smurfmage()
 console.log(arrPlayers);
