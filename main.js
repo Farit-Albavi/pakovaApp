@@ -89,6 +89,11 @@ async function ROG_mysticknight() {
     addToList(datos);
     updateTable();
 }
+async function ymom_is_love() {
+    const datos = await riotAPI('ymom is love');
+    addToList(datos);
+    updateTable();
+}
 
 
 function updateTable() {
@@ -212,4 +217,5 @@ alierdel()
 smurfmage()
 bqolzt()
 ROG_mysticknight()
+ymom_is_love()
 console.log(arrPlayers);
