@@ -84,6 +84,11 @@ async function bqolzt() {
     addToList(datos);
     updateTable();
 }
+async function ROG_mysticknight() {
+    const datos = await riotAPI('ROG mysticknight');
+    addToList(datos);
+    updateTable();
+}
 
 
 function updateTable() {
@@ -206,4 +211,5 @@ michiruso()
 alierdel()
 smurfmage()
 bqolzt()
+ROG_mysticknight()
 console.log(arrPlayers);
